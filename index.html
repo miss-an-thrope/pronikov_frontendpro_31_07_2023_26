@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Homework_26</title>
+</head>
+<body>
+
+<button type="button" 
+	class="btn btn-primary" 
+	data-bs-toggle="modal" 
+	data-bs-toggle="tooltip" 
+	data-bs-placement="top" 
+	title="Довільний текст Tooltip" 
+	data-bs-target="#myModal"
+	id="modalBtn">
+  Відкрити модальне вікно
+</button>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Модальне вікно</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Деякі дані у модальному вікні...
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-warning" id="alertBtn">
+  Показати алерт
+</button>
+
+<div id="alertContainer"></div>
+
+<button type="button" class="btn btn-info mt-3" id="showBirthDateBtn">
+  Показати дату народження
+</button>
+<div id="birthDateContainer" class="mt-3"></div>
+
+<form class="mt-3">
+  <div class="mb-3">
+    <label for="birthDateInput" class="form-label">Введіть дату народження (формат: DD/MM/YYYY)</label>
+    <input type="text" class="form-control" id="birthDateInput" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Перетворити формат</button>
+</form>
+<div id="convertedBirthDateContainer" class="mt-3"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
